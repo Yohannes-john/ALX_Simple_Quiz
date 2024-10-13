@@ -4,7 +4,7 @@ const  
  choice1 = document.getElementById('choice1');
 const choice2 = document.getElementById('choice2');
 const choice3 = document.getElementById('choice3');
-const   
+const submitAnswerBtn = document.getElementById('submit-answer');   
  submitAnswerBtn = document.getElementById('submit-answer');
 const feedback = document.getElementById('feedback');
 const scoreElement = document.createElement('p');
