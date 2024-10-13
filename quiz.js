@@ -72,3 +72,13 @@ function checkAnswer() {
 submitAnswerBtn.addEventListener('click', checkAnswer);
 
 displayQuestion();
+if (userAnswer === currentQuestion.correctAnswer) {
+    score++;
+    feedback.textContent = 'Correct! Well done.';
+} else {
+    feedback.textContent = 'Incorrect. The correct answer is ' + currentQuestion.correctAnswer + '.';
+}
+feedback.textContent = 'Correct! Well done.';
+feedback.textContent = 'Incorrect. The correct answer is ' + currentQuestion.correctAnswer + '.';
+submitAnswerBtn.addEventListener('click', checkAnswer);
+const submitAnswerBtn = document.getElementById('submit-answer');
