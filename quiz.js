@@ -25,7 +25,11 @@ let quizQuestions = [
     },
     // Add more questions here
 ];
-
+ if (userAnswer === correctAnswer) {
+        feedback.textContent = 'Correct! Well done.';
+    } else {
+        feedback.textContent = 'Incorrect. The correct answer is ' + correctAnswer + '.';
+    }
 function displayQuestion() {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     quizQuestion.textContent = currentQuestion.question;
