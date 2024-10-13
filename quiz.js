@@ -30,6 +30,11 @@ let quizQuestions = [
     } else {
         feedback.textContent = 'Incorrect. The correct answer is ' + correctAnswer + '.';
     }
+if (userAnswer === correctAnswer) {
+        feedback.textContent = 'Correct! Well done.';
+    } else {
+        feedback.textContent = "That's incorrect. Try again!";
+    }
 function displayQuestion() {
     const currentQuestion = quizQuestions[currentQuestionIndex];
     quizQuestion.textContent = currentQuestion.question;
